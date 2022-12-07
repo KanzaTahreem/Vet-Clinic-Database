@@ -27,3 +27,5 @@ INSERT INTO species (name)
 VALUES ('Pokemon'),
        ('Digimon');
 
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name='Digimon' GROUP BY id) WHERE name LIKE '%mon';
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name = 'Pokemon' GROUP BY id) WHERE name NOT LIKE '%mon';
