@@ -109,11 +109,17 @@ That's it! Congratulations, you have created your database and connected to it. 
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
+👤 Author 1
 
 - GitHub: [@KanzaTahreem](https://github.com/KanzaTahreem)
 - Twitter: [@kanza_tahreem](https://twitter.com/kanza_tahreem)
 - LinkedIn: [Kanza Tahreem](https://www.linkedin.com/in/kanza-tahreem/)
+
+👤 Author 2
+- GitHub: [@camilovelag](https://github.com/camilovelag)
+- Twitter: [@camilovelag](https://twitter.com/camilovelag)
+- LinkedIn: [camilovelag](https://linkedin.com/in/camilovelag)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
