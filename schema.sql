@@ -47,3 +47,9 @@ CREATE TABLE visits (
 );
 
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+ALTER TABLE visits
+RENAME COLUMN animals_id TO animal_id;
+
+ALTER TABLE visits
+RENAME COLUMN vets_id TO vet_id;
