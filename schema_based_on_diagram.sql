@@ -9,10 +9,7 @@ CREATE TABLE invoices (
   total_amount DECIMAL,
   generated_at TIMESTAMP,
   payed_at TIMESTAMP,
-  medical_history_id INT,
-  CONSTRAINT fk_medical_histroy
-  FOREIGN KEY (medical_history_id)
-  REFERENCES medical_histories(id)
+  medical_history_id INT
 );
 
 CREATE TABLE medical_histories (
@@ -56,3 +53,8 @@ CREATE TABLE treatment_history (
   FOREIGN KEY (medical_history_id)
   REFERENCES medical_histories(id)
 );
+
+ALTER TABLE invoices
+  ADD CONSTRAINT fk_medical_histroy
+  FOREIGN KEY (medical_history_id)
+  REFERENCES medical_histories(id);
