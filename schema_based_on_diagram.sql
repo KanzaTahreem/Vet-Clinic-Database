@@ -9,14 +9,20 @@ CREATE TABLE invoices (
   total_amount DECIMAL,
   generated_at TIMESTAMP,
   payed_at TIMESTAMP,
-  medical_history_id INT FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+  medical_history_id INT,
+  CONSTRAINT fk_medical_histroy
+  FOREIGN KEY (medical_history_id)
+  REFERENCES medical_histories(id)
 );
 
 CREATE TABLE medical_histories (
   id SERIAL PRIMARY KEY,
   admitted_at TIMESTAMP,
-  patient_id INT FOREIGN KEY (patient_id) REFERENCES patients(id),
-  status VARCHAR(250)
+  patient_id INT,
+  status VARCHAR(250),
+  CONSTRAINT fk_paitent
+  FOREIGN KEY (patient_id)
+  REFERENCES patients(id)
 );
 
 CREATE TABLE treatments (
@@ -30,11 +36,23 @@ CREATE TABLE invoice_items (
   unit_price DECIMAL,
   quantity INT,
   total_price DECIMAL,
-  invoice_id INT FOREIGN KEY (invoice_id) REFERENCES invoices(id),
-  treatment_id INT FOREIGN KEY (treatment_id) REFERENCES treatments(id)
+  invoice_id INT,
+  treatment_id INT,
+  CONSTRAINT fk_invoice
+  FOREIGN KEY (invoice_id)
+  REFERENCES invoices(id),
+  CONSTRAINT fk_treatment
+  FOREIGN KEY (treatment_id)
+  REFERENCES treatments(id)
 );
 
 CREATE TABLE treatment_history (
-  treatment_id INT FOREIGN KEY (treatment_id) REFERENCES treatments(id),
-  medical_history_id INT FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
+  treatment_id INT,
+  medical_history_id INT,
+  CONSTRAINT fk_treatment_id
+  FOREIGN KEY (treatment_id)
+  REFERENCES treatments(id),
+  CONSTRAINT fk_medical_histroy_id
+  FOREIGN KEY (medical_history_id)
+  REFERENCES medical_histories(id)
 );
