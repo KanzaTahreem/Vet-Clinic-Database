@@ -18,3 +18,18 @@ CREATE TABLE medical_histories (
   patient_id INT,
   status VARCHAR(250),
 );
+
+CREATE TABLE treatments (
+  id SERIAL PRIMARY KEY,
+  type VARCHAR(250),
+  name VARCHAR(250)
+);
+
+CREATE TABLE invoice_items (
+  id SERIAL PRIMARY KEY,
+  unit_price DECIMAL,
+  quantity INT,
+  total_price DECIMAL,
+  invoice_id INT,
+  treatment_id INT
+);
