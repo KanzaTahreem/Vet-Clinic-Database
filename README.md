@@ -3,20 +3,21 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Screenshots](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Creating a database](#creating-a-database)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Vet Clinic Database ](#-vet-clinic-database-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Schema Diagram ](#-schema-diagram-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Creating a database ](#creating-a-database-)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -49,9 +50,9 @@ _**Vet Clinic Database**_ a relational database to create the initial data struc
 
 <!-- LIVE DEMO -->
 
-## 🚀 Screenshots <a name="screenshots"></a>
+## 🚀 Schema Diagram <a name="schema-diagram"></a>
 
-[Loading . . .]()
+![Schema Diagram](./images/Schema%20Diagram/Vet%20Clinic.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
