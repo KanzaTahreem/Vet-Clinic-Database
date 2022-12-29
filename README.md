@@ -23,7 +23,11 @@
 
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
-_**Vet Clinic Database**_ a relational database to create the initial data structure for a vet clinic.
+_**Vet Clinic Database**_ is a relational database, based on a real-life example, to create the data structure for a vet clinic. The database consist of data about
+- Animals
+- Animals's owners
+- Clinic employees
+- Visits
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -45,6 +49,7 @@ _**Vet Clinic Database**_ a relational database to create the initial data struc
 - Update animals table by altering the rows and create more tables.
 - Primary key & foreign key mechanism for joining tables to model **`one-to-many`** relationships.
 - Join tables to model **`many-to-many`** relationships.
+- Database performance audit.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,8 +133,8 @@ That's it! Congratulations, you have created your database and connected to it. 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Database performance audit.
-- Add database schema diagram.
+- Add more data to the tables
+- Perform multiple queries
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
